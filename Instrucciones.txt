@@ -1,0 +1,33 @@
+Instrucciones de como usar el proyecto de Inteligencia.
+
+El código contiene  un archivo el cual  lee  comentarios sobre  criticas de algunos consumidores.
+Para  poder  ejecutar  el archivo.
+1.- Primero tenemos que ir a la carpeta donde se encuentra los archivos de python
+2.- Desde terminal ejecutamos la orden —$fa python N2.py
+
+Despliega las  imagenes con los cluster y el dendograma de la clasificación de las palabras.
+Para poder cambiar  el archivo que se desea  analizar tenemos que ir  a la linea 17 del archivo N2.py donde  dice:
+  
+"archivo= open('h.txt', 'r').read()#la base de datos"
+
+cambiar  la parte "h.txt" por el archivo que deseamos analizar.
+el archivo que deseamos analizar debe de encontrarse  en la misma  carpeta que "N2.py"
+se guarda el archivo  y se regresa a la instrucción 1.
+
+Si se quiere cambiar el método para cambiar las distancia debe de ir a la linea 131 del archivo N2.py donde dice :
+
+“data_dist=pdist(array,'euclidean’)”
+
+cambiar ‘euclidean’ por la que se desea,existen varias en la documentación de python:
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.pdist.html
+
+Si se quiere  calcular las presentadas en el proyecto debe de ponerse:
+
+* Manhattan 
+data_dist=pdist(array,’cityblock’)
+
+*Chebyshev
+data_dist=pdist(array,’chebyshev’)
+
+
